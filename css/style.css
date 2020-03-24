@@ -1,0 +1,57 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+[class*="col-"] {
+  border: 3px solid black;
+}
+
+.wrapper90 {
+  width: 90%;
+  margin: 0 auto;
+}
+/* HEADER FIXED*/
+.nav_fixed {
+  height: 80px;
+  background-color: yellow;
+}
+
+/* jumbo */
+.jumbo {
+  background-color: pink;
+}
+
+/* logo */
+.logo {
+  background-color: purple;
+}
+
+/* deploy */
+.deploy {
+  background-color: grey;
+}
+
+/* designed */
+.designed {
+  background-color: red;
+}
+
+/* business */
+.business {
+  background-color: darkblue;
+}
+
+/* customers */
+.customers {
+  background-color: green;
+  }
+
+/* rockerbox */
+.rockerbox {
+  background-color: lightgrey;
+}
+
+/* FOOTER */
+.footer {
+  background-color: blue;
+}
