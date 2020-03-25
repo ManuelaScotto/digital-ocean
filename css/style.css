@@ -2,25 +2,129 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-[class*="col-"] {
+.debug {
   border: 3px solid black;
 }
 
-.wrapper90 {
-  width: 90%;
-  margin: 0 auto;
+.padding120 {
+  padding: 120px 0;
+}
+.wrapper100 {
+  width: calc(100% - 30px);
+  margin: 0 15px;
+}
+
+.btn_white {
+  border: 1px solid #034afe;
+  vertical-align: inherit;
+}
+
+.btn_white:hover {
+  background-color: #034afe;
+  color: white;
+}
+
+.color_white {
+  color: white;
+}
+
+h1 {
+  font-size: 62px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #020d29;
 }
 /* HEADER FIXED*/
 .nav_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 80px;
-  background-color: yellow;
+  width: 100%;
+  line-height: 80px;
+  z-index: 3;
+  background-color: white;
 }
 
+.nav_fixed img {
+  vertical-align: middle;
+  width: 150px;
+}
+
+.nav_fixed ul li a {
+  color: #020d29;
+  font-weight: 500;
+}
+.nav_fixed ul li a.menu:hover {
+  text-decoration: none;
+  color: #034afe;
+}
+.nav_fixed ul li {
+  margin-left: 5px;
+}
+.nav_fixed ul li span {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.nav_fixed a {
+  color: #034afe;
+}
+.nav_fixed a:hover {
+  text-decoration: none;
+  cursor: context-menu;
+}
 /* jumbo */
 .jumbo {
-  background-color: pink;
+  margin-top: 80px;
+  background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+  background-size: cover;
 }
 
+.jumbo p {
+  font-size: 24px;
+}
+
+.jumbo_title {
+  padding: 0 40px;
+}
+.jumbo_form {
+  max-width: 80%;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+.jumbo_padding_top{
+  padding-top: 20px;
+}
+
+.jumbo_input {
+  height: 48px;
+  font-size: 16px;
+  border-color: #eceef6;
+}
+.jumbo_input::placeholder {
+  color: #56607b;
+}
+
+.jumbo_input:focus {
+  border-color: #034afe;
+  box-shadow: none;
+}
+
+.btn_blue {
+  color: white;
+  background-color: #034afe;
+}
+
+.btn_blue:hover {
+  color: white;
+  background-color: #003ed8;
+}
 /* logo */
 .logo {
   background-color: purple;
@@ -54,4 +158,11 @@ body {
 /* FOOTER */
 .footer {
   background-color: blue;
+}
+
+@media screen and (min-width:1200px) {
+  .wrapper100 {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 }
