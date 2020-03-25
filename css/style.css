@@ -29,7 +29,9 @@ body {
 }
 
 h1 {
-  font-size: 62px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 h3 {
@@ -85,14 +87,19 @@ h3 {
 }
 
 .jumbo p {
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #eceef6;
 }
-
+.relative{
+  position: relative;
+}
 .jumbo_title {
   padding: 0 40px;
 }
 .jumbo_form {
-  max-width: 80%;
+  max-width: 100%;
   background-color: white;
   padding: 30px 20px;
   border-radius: 5px;
@@ -120,11 +127,56 @@ h3 {
   color: white;
   background-color: #034afe;
 }
-
 .btn_blue:hover {
   color: white;
   background-color: #003ed8;
 }
+
+.or_line {
+  line-height: 16px;
+  margin: 5px 0;
+}
+.or_line p{
+  color: #798392;
+  font-size: 16px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.or_line:before ,
+.or_line:after {
+  visibility: hidden;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background-color: #eceef6;
+  vertical-align: middle;
+}
+.or_line:before {
+  margin-right: 30px;
+}
+.or_line:after {
+  margin-left: 30px;
+}
+
+.btn_google {
+  position: relative;
+  background-color: #ebf6fd;
+  border-color: #74a4e8;
+  color: #020d29;
+  font-weight: 500;
+}
+.btn_google:hover {
+  background-color: #cde4f3;
+}
+.btn_google img {
+  width: 16px;
+  position: absolute ;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
 /* logo */
 .logo {
   background-color: purple;
@@ -164,5 +216,42 @@ h3 {
   .wrapper100 {
     max-width: 1170px;
     margin: 0 auto;
+  }
+  .or_line:before ,
+  .or_line:after {
+    visibility: visible;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .jumbo_title p {
+    font-size: 24px;
+  }
+
+}
+@media screen and (min-width:768px) {
+  h1 {
+    font-size: 64px;
+  }
+  .jumbo_form {;
+    max-width: 80%;
+  }
+
+}
+
+@media screen and (min-width:440px) {
+  .or_line:before ,
+  .or_line:after {
+    visibility: visible;
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 370px) {
+  .or_line:before ,
+  .or_line:after {
+    visibility: visible;
+    width: 13%;
   }
 }
