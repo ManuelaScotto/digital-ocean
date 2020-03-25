@@ -19,6 +19,10 @@ body {
 .padding64 {
   padding: 64px 0 30px;
 }
+
+.padding32 {
+  padding-top: 32px;
+}
 .wrapper100 {
   width: calc(100% - 30px);
   margin: 0 15px;
@@ -78,6 +82,10 @@ h5 {
   font-size: 16px;
   color: #808d9e;
 }
+
+.font_size13 {
+  font-size: 13px;
+}
 /* HEADER FIXED*/
 .nav_fixed {
   position: fixed;
@@ -88,6 +96,7 @@ h5 {
   line-height: 80px;
   z-index: 3;
   background-color: white;
+  box-shadow: 0px 1px 20px -7px rgba(191,191,191,1);
 }
 
 .nav_fixed img {
@@ -228,35 +237,39 @@ h5 {
 }
 
 .logo_first img {
-  width: 80%;
-  min-height: 140px;
-  max-height: 160px;
+  width: 70%;
+  /* height: 140px; */
+  /* max-height: 160px; */
 }
 
 .logo_second img {
   width: 70%;
-  min-height: 131px;
-  max-height: 160px;
+  /* height: 131px; */
+  /* max-height: 160px; */
 }
 
 .logo_third img {
   width: 70%;
-  min-height: 81px;
-  max-height: 164px;
-  margin-top: 10px;
+  margin: 0;
+  /* height: 81%; */
+  /* max-height: 164px; */
+  /* margin-top: 10px; */
 }
 
 .logo_last img{
-  padding-top: 15px;
+  margin: 0;
+  width: 70%;
 }
 
-.logo a {
+.logo a,
+.business a {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #034afe;
 }
 
-.logo a:hover {
+.logo a:hover,
+.business a:hover {
   text-decoration: none;
 }
 /* deploy */
@@ -292,23 +305,37 @@ h5 {
 }
 
 .designed img {
-  width: 80%;
+  width: 50%;
   margin-bottom: 20px;
 }
 
 .arrow {
-  margin: 0 30px;
-  font-size: 30px;
-}
-/* business */
-.business {
-  background-color: darkblue;
+  margin: 0 10px;
+  font-size: 20px;
 }
 
 /* customers */
 .customers {
-  background-color: green;
+  background-image: url(../img/earth-74015.jpg);
+  background-size: cover;
+  background-position: center;
   }
+
+.customers h2 {
+  color: white;
+}
+
+.customers ul li {
+  margin-top: 10px;
+}
+
+.customers ul li a {
+  color: #10c2c3;
+}
+.customers ul li a:hover {
+  color: #034afe;
+  text-decoration: none;
+}
 
 /* rockerbox */
 .rockerbox {
@@ -330,13 +357,19 @@ h5 {
     visibility: visible;
     width: 30%;
   }
+  .designed img {
+    width: 80%;
+  }
+  .arrow {
+    margin: 0 30px;
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width:992px) {
   .jumbo_title p {
     font-size: 24px;
   }
-
 }
 @media screen and (min-width:768px) {
   h1 {
