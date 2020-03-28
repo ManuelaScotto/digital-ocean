@@ -410,7 +410,6 @@ h5 {
 
 .container_help {
   border-radius: 10px;
-  box-shadow: 0px 0px 8px 0px rgba(150,150,150,1);
   background-color: white;
 }
 .size_msg {
@@ -458,6 +457,11 @@ h5 {
   font-weight: 600;
   color: white;
 }
+
+.drop_shadow {
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+}
+
 /* MEDIA QUERY */
 /* SMALL */
 @media screen and (min-width:768px) {
