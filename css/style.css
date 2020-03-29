@@ -36,11 +36,13 @@ body {
 .footer a.btn_white {
   color: #034afe;
   background-color: white;
+  transition: all 0.25s ease;
 }
 .nav_fixed ul li a.btn_white:hover {
   color: white;
   background-color: #034afe;
 }
+
 
 /* color */
 .color_white {
@@ -196,6 +198,7 @@ h5 {
 .btn_blue {
   color: white;
   background-color: #034afe;
+  transition: all 0.25s ease;
 }
 .btn_blue:hover {
   color: white;
@@ -213,6 +216,7 @@ h5 {
   color: #020d29;
   border-color: #74a4e8;
   background-color: #ebf6fd;
+  transition: all 0.25s ease;
 }
 .btn_google:hover {
   background-color: #cde4f3;
@@ -386,7 +390,7 @@ h5 {
 .footer a {
   color: #8491a3;
 }
-.footer a:hover {
+.footer .color_a a:hover {
   color: white;
   text-decoration: none;
 }
