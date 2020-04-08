@@ -422,7 +422,7 @@ h5 {
 /* SHARK */
 .fixed_shark {
   position: fixed;
-  right: 5px;
+  right: 0;
   bottom: 20px;
   width: 100%;
   z-index: 3;
@@ -433,8 +433,10 @@ h5 {
 }
 
 .container_help {
+  position: relative;
   border-radius: 10px;
   background-color: white;
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
 }
 .size_msg {
   padding: 7px 0 7px 7px;
@@ -456,7 +458,7 @@ h5 {
 .arrow_msg {
   position: absolute;
   top: 50%;
-  right: 2%;
+  left: 100%;
   font-size: 20px;
   color: white;
 }
@@ -480,10 +482,6 @@ h5 {
   padding: 3px;
   font-weight: 600;
   color: white;
-}
-
-.drop_shadow {
-  filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
 }
 
 /* MEDIA QUERY */
@@ -534,11 +532,6 @@ h5 {
     display: inline-block;
     width: 50%;
     margin: 0 auto;
-  }
-  .container_help {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px 0px rgba(150,150,150,1);
   }
   .size_msg {
     padding: 11px 0 11px 11px;
