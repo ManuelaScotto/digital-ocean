@@ -289,20 +289,40 @@ h5 {
    background-color: #eceef6;
 }
 
+.arrow {
+  margin: 0 10px;
+  font-size: 20px;
+}
+.arrow:hover {
+  color: blue;
+}
+.arrow:active {
+  color: #337ab7;
+}
 .slider_container {
   display: flex;
   align-items: center;
-
+}
+.slider {
+  display: flex;
+  justify-content: center;
+}
+.slider img.active {
+  display: block;
 }
 .slider img {
+  display: none;
+  text-align: center;
   width: 100%;
   margin-bottom: 20px;
   cursor: grab;
 }
-
-.arrow {
-  margin: 0 10px;
-  font-size: 20px;
+.designed .list-inline i.fa-circle {
+  color: #337ab7;
+}
+.designed .list-inline li > i.active {
+  background-color: #337ab7;
+  border-radius: 50%;
 }
 
 /* customers */
@@ -488,7 +508,7 @@ h5 {
   .jumbo_title {
     padding: 0 40px 0 0;
   }
-  .jumbo_form {;
+  .jumbo_form {
     max-width: 80%;
   }
   .flex_logo {

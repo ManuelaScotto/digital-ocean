@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <!-- mystyle -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <title>Digital Ocean</title>
   </head>
   <body>
@@ -147,18 +149,21 @@
           <h2>Designed for developers</h2>
           <p class="p_under_title">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
           <div class="slider_container">
-            <i class="arrow fas fa-chevron-left hidden-xs"></i>
+            <i class="arrow prev fas fa-chevron-left hidden-xs"></i>
             <div class="slider">
-              <img src="img/screenshot-create-droplet-12336b41.jpg" alt="screenshot">
+              <img class="active" src="img/screenshot-create-droplet-12336b41.jpg" alt="screenshot">
+              <img  src="https://www.digitalocean.com/assets/media/homepage/screenshot-create-droplet-941311f7.jpg" alt="screenshot">
+              <img src="https://www.digitalocean.com/assets/media/homepage/screenshot-database-c59bd221.png">
+              <img src="https://www.digitalocean.com/assets/media/homepage/screenshot-upload-to-space-47275215.jpg">
             </div>
-            <i class=" arrow fas fa-chevron-right hidden-xs"></i>
+            <i class=" arrow next fas fa-chevron-right hidden-xs"></i>
           </div>
           <p class="p_underh4">Create compute servers in 55 seconds of less</p>
           <ul class="list-inline">
-            <li><a href="#"><i class="fas fa-circle"></i></a></li>
-            <li><a href="#"><i class="far fa-circle"></i></a></li>
-            <li><a href="#"><i class="far fa-circle"></i></a></li>
-            <li><a href="#"><i class="far fa-circle"></i></a></li>
+            <li><i class="active first far fa-circle"></i></li>
+            <li><i class="far fa-circle"></i></li>
+            <li><i class="far fa-circle"></i></li>
+            <li><i class="last far fa-circle"></i></li>
           </ul>
         </div>
       </section>
